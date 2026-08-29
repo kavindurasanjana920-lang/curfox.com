@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curfox Courier Management</title>
+<meta name="description" content="Sri Lanka's #1 courier management platform. Manage riders, routes, COD, and branches from one dashboard. Book a free 30-minute demo.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script>document.documentElement.className += " js";</script>
+
+<!-- ========================= Header ========================= -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <a class="site-header__logo" href="#top" aria-label="Curfox — home">
+      <img src="assets/logo-wordmark-white.png" alt="Curfox">
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#problem">Why Curfox</a>
+      <a href="features.html">Features</a>
+      <a href="#customers">Customers</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a class="btn btn--primary btn--sm" href="#demo">Book a Free Demo</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ========================= 1. Hero ========================= -->
+  <section class="hero">
+    <!-- Route path: the dashed line a parcel takes between branch nodes -->
+    <svg class="hero__route" viewBox="0 0 800 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+      <path d="M-30 700 C 150 700, 130 520, 300 512 S 560 560, 640 400 S 700 150, 900 120"
+            fill="none" stroke="#FF9016" stroke-opacity=".3" stroke-width="2" stroke-dasharray="9 13"/>
+      <g fill="#FF9016" fill-opacity=".55">
+        <circle cx="300" cy="512" r="5"/>
+        <circle cx="640" cy="400" r="5"/>
+      </g>
+    </svg>
+
+    <div class="wrap">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--inv">AI-Powered Courier Management</p>
+          <h1>Sri Lanka&rsquo;s <span class="rank">#1</span> Courier Management Platform</h1>
+          <p class="hero__sub">Manage riders, routes, COD, and branches from one dashboard.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#demo">Book a Free Demo</a>
+            <a class="btn btn--ghost" href="#platform">See the platform</a>
+          </div>
+
+          <!-- Trust strip: numbers do the convincing -->
+          <div class="trust">
+            <div>
+              <span class="trust__n" data-count="45" data-suffix="%">45%</span>
+              <span class="trust__l">of the Sri Lankan courier market</span>
+            </div>
+            <div>
+              <span class="trust__n" data-count="30000" data-suffix="+" data-format="k">30,000+</span>
+              <span class="trust__l">merchants on the platform</span>
+            </div>
+            <div>
+              <span class="trust__n" data-count="25" data-suffix="M+">25M+</span>
+              <span class="trust__l">orders delivered</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__art">
+          <img src="assets/hero.png" width="800" height="516"
+               alt="The Curfox courier management dashboard shown on a desktop, laptop and tablet — order statistics, monthly order charts and a live order list."
+               fetchpriority="high">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= 2. Problem / agitation ========================= -->
+  <section class="band band--paper" id="problem">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">The operations gap</p>
+        <h2>Running a courier network on spreadsheets has a ceiling.</h2>
+        <p>Three things break first as volume grows &mdash; and they break on the same day.</p>
+      </div>
+
+      <div class="problems">
+        <article class="problem reveal">
+          <p class="problem__tag">Dispatch</p>
+          <h3>Manual dispatch chaos</h3>
+          <p>Riders assigned by phone call and spreadsheet, re-planned by hand every time someone calls in sick.</p>
+        </article>
+
+        <article class="problem reveal">
+          <p class="problem__tag">Visibility</p>
+          <h3>No real-time visibility</h3>
+          <p>Merchants ring your hotline because nobody in the branch can say where the parcel actually is.</p>
+        </article>
+
+        <article class="problem reveal">
+          <p class="problem__tag">Cash</p>
+          <h3>COD reconciliation headaches</h3>
+          <p>Cash from hundreds of riders reconciled by hand, days after the money has already moved.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= 3. Product proof ========================= -->
+  <section class="band band--surface" id="platform">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Inside the platform</p>
+        <h2>This is the dashboard your dispatch team will run on.</h2>
+        <p>Not a concept &mdash; the live Curfox screens, in use across branches today.</p>
+      </div>
+
+      <div class="shots">
+        <figure class="shot reveal">
+          <div class="shot__device">
+            <img src="assets/dashboard.png" width="1024" height="585"
+                 alt="Curfox courier dashboard on a laptop: order statistics, monthly earnings and monthly orders charts, collected COD, delivery charge, commission and invoice value totals, and a delivered-versus-failed breakdown.">
+          </div>
+          <figcaption>
+            <strong>Courier dashboard</strong>
+            Order counts, monthly earnings, collected COD and delivered-vs-failed rate, per branch.
+          </figcaption>
+        </figure>
+
+        <figure class="shot reveal">
+          <div class="shot__frame">
+            <img src="assets/merchant_portal.png" width="1024" height="660"
+                 alt="Curfox merchant portal: orders count, delivery charge, invoice value and pending invoice statistics above COD income, monthly order and monthly delivery charge charts.">
+          </div>
+          <figcaption>
+            <strong>Merchant portal</strong>
+            Your merchants book orders, track parcels and see their own COD settlements &mdash; without calling you.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="features">
+        <article class="feature reveal">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="7" r="3.2"/><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/>
+            </svg>
+          </div>
+          <h3>Rider &amp; Fleet Management</h3>
+          <p>Onboard riders, assign delivery zones, and track attendance, capacity and performance per rider across every branch.</p>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="5" cy="18.5" r="2.4"/><circle cx="19" cy="5.5" r="2.4"/>
+              <path d="M7.4 18.5h6.1a3.6 3.6 0 0 0 0-7.2h-3a3.6 3.6 0 0 1 0-7.2h6.1"/>
+            </svg>
+          </div>
+          <h3>Route Optimization</h3>
+          <p>Stops auto-sequenced by distance, time window and rider load, so more parcels fit inside the same working day.</p>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+            </svg>
+          </div>
+          <h3>Real-Time Tracking</h3>
+          <p>Live parcel status for your control room, your merchants and the end customer &mdash; and far fewer &ldquo;where is my order&rdquo; calls.</p>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.6" y="5.5" width="18.8" height="13" rx="2.4"/><path d="M2.6 10h18.8"/><path d="M6.6 14.6h3.6"/>
+            </svg>
+          </div>
+          <h3>COD Reconciliation</h3>
+          <p>Cash collected, remitted and settled per rider and per merchant, reconciled daily instead of chased weekly.</p>
+        </article>
+      </div>
+
+      <p class="platform__more reveal">
+        <a href="features.html">See all 18 modules in the platform</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================= 4. Social proof ========================= -->
+  <section class="band band--paper" id="customers">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-bottom:44px;">
+        <p class="eyebrow">Who runs on Curfox</p>
+        <h2>Trusted by the couriers moving Sri Lanka&rsquo;s parcels.</h2>
+      </div>
+
+      <div class="social__inner">
+        <div class="clients reveal">
+          <div class="client">
+            <span class="client__logo"><img src="assets/clients/transexpress.png" alt="Trans Express"></span>
+            <span>
+              <span class="client__name">Trans Express</span>
+              <span class="client__meta">Island-wide courier</span>
+            </span>
+          </div>
+          <div class="client">
+            <span class="client__logo"><img src="assets/clients/royalexpress.png" alt="Royal Express Courier &amp; Logistics"></span>
+            <span>
+              <span class="client__name">Royal Express</span>
+              <span class="client__meta">Courier &amp; logistics</span>
+            </span>
+          </div>
+        </div>
+
+        <p class="social__lede reveal">Four operators, in their own words &mdash; what changed after they moved onto Curfox.</p>
+      </div>
+
+      <div class="videos">
+        <article class="vid reveal">
+          <button class="vid__thumb" type="button" data-video="UhoZMXYk82k"
+                  aria-label="Play video: How Curfox helped Trans Express scale from 12 parcels to 450,000+ monthly orders">
+            <img src="assets/testimonials/UhoZMXYk82k.jpg" alt="" width="900" height="506" loading="lazy">
+            <span class="vid__play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.2v13.6L19 12 8 5.2Z"/></svg>
+            </span>
+          </button>
+          <h3>From 12 parcels to 450,000+ monthly orders</h3>
+          <p class="vid__meta">
+            <span>Trans Express</span>
+            <a href="https://www.youtube.com/watch?v=UhoZMXYk82k" target="_blank" rel="noopener">Watch on YouTube</a>
+          </p>
+        </article>
+
+        <article class="vid reveal">
+          <button class="vid__thumb" type="button" data-video="RVYIx72Efyg"
+                  aria-label="Play video: Royal Express grew from zero to 20,000+ deliveries per day in two years with Curfox">
+            <img src="assets/testimonials/RVYIx72Efyg.jpg" alt="" width="900" height="506" loading="lazy">
+            <span class="vid__play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.2v13.6L19 12 8 5.2Z"/></svg>
+            </span>
+          </button>
+          <h3>Zero to 20,000+ deliveries a day in two years</h3>
+          <p class="vid__meta">
+            <span>Royal Express</span>
+            <a href="https://www.youtube.com/watch?v=RVYIx72Efyg" target="_blank" rel="noopener">Watch on YouTube</a>
+          </p>
+        </article>
+
+        <article class="vid reveal">
+          <button class="vid__thumb" type="button" data-video="gfcOLjZISpA"
+                  aria-label="Play video: How Curfox empowers 70+ branches with speed and reliability">
+            <img src="assets/testimonials/gfcOLjZISpA.jpg" alt="" width="900" height="506" loading="lazy">
+            <span class="vid__play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.2v13.6L19 12 8 5.2Z"/></svg>
+            </span>
+          </button>
+          <h3>70+ branches running on one system</h3>
+          <p class="vid__meta">
+            <span>Client testimonial</span>
+            <a href="https://www.youtube.com/watch?v=gfcOLjZISpA" target="_blank" rel="noopener">Watch on YouTube</a>
+          </p>
+        </article>
+
+        <article class="vid reveal">
+          <button class="vid__thumb" type="button" data-video="T2jKIb9cEjs"
+                  aria-label="Play video: How Curfox boosted night sorting efficiency to 30,000 parcels before 4 AM">
+            <img src="assets/testimonials/T2jKIb9cEjs.jpg" alt="" width="900" height="506" loading="lazy">
+            <span class="vid__play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.2v13.6L19 12 8 5.2Z"/></svg>
+            </span>
+          </button>
+          <h3>30,000 parcels sorted before 4 AM</h3>
+          <p class="vid__meta">
+            <span>Client testimonial</span>
+            <a href="https://www.youtube.com/watch?v=T2jKIb9cEjs" target="_blank" rel="noopener">Watch on YouTube</a>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= 4b. Recognition ========================= -->
+  <section class="band awards">
+    <div class="wrap">
+      <div class="awards__head reveal">
+        <p class="eyebrow eyebrow--inv">Recognition</p>
+        <h2>Awarded, not self-declared.</h2>
+        <p>Curfox has been recognised five times by Sri Lanka&rsquo;s National ICT Awards (NBQSA), SLASSCOM Ingenuity and APICTA.</p>
+      </div>
+      <figure class="awards__photo reveal">
+        <img src="assets/awards-photo.jpg" width="1600" height="590" loading="lazy"
+             alt="The Curfox award shelf: framed certificates from the National ICT Awards NBQSA 2023 and 2024, APICTA and the UWU Expo, three NBQSA trophies, and awards from SLASSCOM Ingenuity, IEEE Innovation Nation Sri Lanka and Trans Express.">
+        <figcaption>Parallax Technologies &middot; Curfox award shelf, 2022&ndash;2024</figcaption>
+      </figure>
+
+      <img class="awards__strip reveal" src="assets/awards-strip.png" width="1400" height="270"
+           alt="Award laurels: Gold for Supply Chain and Logistics at the National ICT Awards NBQSA 2024; Silver Overall Winner at the National ICT Awards NBQSA 2024; National 1st Runner-up at the SLASSCOM Ingenuity Awards 2024; Merit Award at APICTA Hong Kong 2023; Silver Award at the National Best Quality ICT Awards NBQSA 2023.">
+    </div>
+  </section>
+
+  <!-- ========================= 5. Demo request ========================= -->
+  <section class="band demo" id="demo">
+    <div class="wrap">
+      <div class="demo__grid">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--inv">Book a demo</p>
+          <h2>See Curfox running on your operation.</h2>
+          <p class="demo__lede">Pick a slot that suits you. We&rsquo;ll walk you through the exact setup a courier your size runs on.</p>
+          <ul class="demo__list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              <span>A 30-minute walkthrough, not a sales pitch</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              <span>Built around your branches, riders and COD flow</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              <span>Straight answer on whether we&rsquo;re a fit</span>
+            </li>
+          </ul>
+
+          <div class="demo__call">
+            <p class="demo__call-label">Rather talk right now?</p>
+            <p class="demo__call-nums">
+              <a href="tel:+94779436364">+94 77 943 6364</a>
+              <a href="tel:+94114226900">+94 11 422 6900</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="booking reveal" id="bookingCard">
+          <!-- Calendly inline scheduler. Custom background/text colours are a paid
+               Calendly feature and are ignored on lower plans, so the widget is
+               framed as a white card instead of fighting it. -->
+          <div class="calendly-inline-widget" id="calendlyEmbed"
+               data-url="https://calendly.com/namal_att/courier_growth_strategy_session?hide_gdpr_banner=1"></div>
+
+          <div class="booking__fallback" id="bookingFallback" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>
+            <h3>Pick a time that suits you</h3>
+            <p>The scheduler couldn&rsquo;t load in this view. Open it directly &mdash; it takes about a minute.</p>
+            <a class="btn btn--primary" href="https://calendly.com/namal_att/courier_growth_strategy_session" target="_blank" rel="noopener">Open the booking page</a>
+          </div>
+
+          <noscript>
+            <div class="booking__fallback booking__fallback--static">
+              <h3>Pick a time that suits you</h3>
+              <p>Booking needs JavaScript. Open the scheduler directly instead.</p>
+              <a class="btn btn--primary" href="https://calendly.com/namal_att/courier_growth_strategy_session" target="_blank" rel="noopener">Open the booking page</a>
+            </div>
+          </noscript>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========================= 6. Footer ========================= -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <p class="footer__reassure">No commitment. 30-minute walkthrough. See if Curfox fits your operations.</p>
+      <div class="footer__logo">
+        <img src="assets/logo-full-white.png" alt="Curfox — AI-powered courier management" width="2112" height="544">
+      </div>
+    </div>
+    <div class="footer__mid">
+      <div class="footer__col">
+        <h3 class="footer__h">Talk to us</h3>
+        <p class="footer__contact">
+          <a href="tel:+94779436364">+94 77 943 6364</a>
+          <a href="tel:+94114226900">+94 11 422 6900</a>
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__h">Follow Curfox</h3>
+        <div class="socials">
+          <a href="https://www.facebook.com/curfoxdms" target="_blank" rel="noopener" aria-label="Curfox on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v6h3v-6h2.6l.4-3H13v-2c0-.6.4-1 1-1Z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@curfox" target="_blank" rel="noopener" aria-label="Curfox on YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.6a2.5 2.5 0 0 0-1.8-1.8C18.2 5.4 12 5.4 12 5.4s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.6C2 9.2 2 12 2 12s0 2.8.4 4.4a2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8C22 14.8 22 12 22 12s0-2.8-.4-4.4ZM10 15.1V8.9l5.2 3.1-5.2 3.1Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/showcase/curfox" target="_blank" rel="noopener" aria-label="Curfox on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.9 8.4H4v11.2h2.9V8.4ZM5.4 3.6a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4ZM20 13.4c0-3-1.6-4.4-3.8-4.4-1.7 0-2.5.95-2.9 1.6V8.4H10.4c.04.85 0 11.2 0 11.2h2.9v-6.25c0-.28.02-.56.1-.76.23-.56.73-1.14 1.6-1.14 1.13 0 1.58.86 1.58 2.12v6.03H20v-6.2Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span id="year">2026</span> Curfox by Parallax Technologies &middot; Colombo, Sri Lanka</span>
+      <span><a href="#demo">Book a free demo</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------------------------------------------------------------------
+     LEAD FORM — the only thing you must edit to go live.
+
+     1. Go to web3forms.com, enter the inbox that should receive leads
+        (your Microsoft 365 address), and confirm the email they send you.
+     2. Paste the access key they give you below. It is safe in public
+        source: it only allows posting TO your form, never reading from it.
+     3. In Microsoft 365, allow mail from web3forms.com so notifications
+        don't land in Junk.
+
+     Using Formspree instead? Set endpoint to "https://formspree.io/f/XXXX",
+     leave accessKey as "" — Formspree ignores it and returns {ok:true}.
+     --------------------------------------------------------------------- */
+  var LEAD_FORM = {
+    endpoint: "https://api.web3forms.com/submit",
+    accessKey: "REPLACE-WITH-YOUR-ACCESS-KEY",
+    subject: "New demo request — Curfox landing page"
+  };
+
+  /* Self-service booking. Kept without a ?month= param so it always opens on
+     the current month rather than a date that drifts into the past. */
+  var CALENDLY_URL = "https://calendly.com/namal_att/courier_growth_strategy_session";
+
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* Header: solid once the hero starts scrolling away */
+  var header = document.getElementById("siteHeader");
+  var onScroll = function () {
+    header.classList.toggle("is-stuck", window.scrollY > 12);
+  };
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  /* Scroll reveals + stat count-up */
+  var format = function (n, suffix, mode) {
+    var v = mode === "k" ? n.toLocaleString("en-US") : String(n);
+    return v + suffix;
+  };
+
+  var countUp = function (el) {
+    if (el.dataset.done) return;
+    el.dataset.done = "1";
+    var target = parseFloat(el.dataset.count);
+    var suffix = el.dataset.suffix || "";
+    var mode = el.dataset.format || "";
+    if (reduced) { el.textContent = format(target, suffix, mode); return; }
+    var start = performance.now(), dur = 1100;
+    var step = function (now) {
+      var t = Math.min((now - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = format(Math.round(target * eased), suffix, mode);
+      if (t < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        if (el.classList.contains("reveal")) el.classList.add("is-in");
+        if (el.dataset.count) countUp(el);
+        io.unobserve(el);
+      });
+    }, { threshold: 0.2, rootMargin: "0px 0px -40px 0px" });
+
+    document.querySelectorAll(".reveal").forEach(function (el, i) {
+      el.style.transitionDelay = (i % 4) * 70 + "ms";
+      io.observe(el);
+    });
+    document.querySelectorAll("[data-count]").forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-in"); });
+  }
+
+  /* Failsafe: nothing on this page may stay invisible because an observer
+     never fired. Show everything still hidden after 3s. */
+  window.setTimeout(function () {
+    document.querySelectorAll(".reveal:not(.is-in)").forEach(function (el) {
+      el.style.transitionDelay = "0ms";
+      el.classList.add("is-in");
+    });
+    document.querySelectorAll("[data-count]").forEach(countUp);
+  }, 3000);
+
+  /* Video testimonials: swap the poster for the player only on click, so the
+     page makes no YouTube request until someone actually wants to watch. */
+  document.querySelectorAll(".vid__thumb").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var frame = document.createElement("div");
+      frame.className = "vid__frame";
+
+      var player = document.createElement("iframe");
+      player.src = "https://www.youtube-nocookie.com/embed/" +
+        encodeURIComponent(btn.dataset.video) + "?autoplay=1&rel=0";
+      player.title = btn.getAttribute("aria-label").replace(/^Play video: /, "");
+      player.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      player.allowFullscreen = true;
+
+      frame.appendChild(player);
+      btn.replaceWith(frame);
+      player.focus();
+    });
+  });
+
+  /* Calendly inline widget.
+     The scheduler is a third-party script, so treat it as fallible: if it has
+     not painted an iframe shortly after load, swap in a plain link rather than
+     leaving the visitor staring at an empty box. */
+  var embed = document.getElementById("calendlyEmbed");
+  var fallback = document.getElementById("bookingFallback");
+
+  var showFallback = function () {
+    if (!fallback.hidden) return;
+    embed.style.display = "none";
+    fallback.hidden = false;
+  };
+
+  /* Readiness is judged on Calendly's own postMessage, not on the presence of
+     an iframe — a blocked or blank embed still has an iframe, and a visitor
+     staring at an empty white box has no way to book. */
+  var calendlyReady = false;
+  window.addEventListener("message", function (e) {
+    if (typeof e.origin === "string" && e.origin.indexOf("calendly.com") === -1) return;
+    if (e.data && typeof e.data.event === "string" && e.data.event.indexOf("calendly.") === 0) {
+      calendlyReady = true;
+    }
+  });
+
+  var widget = document.createElement("script");
+  widget.src = "https://assets.calendly.com/assets/external/widget.js";
+  widget.async = true;
+  widget.onerror = showFallback;
+  document.head.appendChild(widget);
+
+  window.setTimeout(function () {
+    if (!calendlyReady) showFallback();
+  }, 8000);
+})();
+</script>
+
+</body>
+</html>
