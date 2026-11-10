@@ -63,8 +63,10 @@ def build(page: str) -> None:
                           lambda m: f'href="{url}{m.group(1) or ""}"',
                           html)
 
-    html = html.replace('<link rel="stylesheet" href="styles.css">',
-                        f"<style>\n{css}\n</style>")
+    # The live pages link styles.css?v=<date> to bust caches; match any version.
+    html = re.sub(r'<link rel="stylesheet" href="styles\.css(?:\?v=[^"]*)?">',
+                  lambda m: f"<style>\n{css}\n</style>",
+                  html)
 
     for pattern in STRIP:
         html = re.sub(pattern, "", html, flags=re.I)
