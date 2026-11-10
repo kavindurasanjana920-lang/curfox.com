@@ -1297,9 +1297,11 @@ a { color: inherit; }
   border-bottom: 1px solid var(--inv-line);
 }
 .footer__logo img { height: 54px; width: auto; opacity: .92; }
+/* Columns span the full container, like the rows above and below */
 .footer__mid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 36px 72px;
   padding: 34px 0 30px;
   border-bottom: 1px solid var(--inv-line);
