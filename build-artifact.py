@@ -23,6 +23,7 @@ PAGES = {
     "index.html": "curfox-landing.html",
     "features.html": "curfox-features.html",
     "about.html": "curfox-about.html",
+    "privacy.html": "curfox-privacy.html",
 }
 
 # Live artifact URL for each page; leave blank to keep the relative link.
@@ -30,6 +31,7 @@ ARTIFACT_URLS = {
     "index.html": "https://claude.ai/code/artifact/d6eb119b-7a4d-4306-8615-f5f6a8408c31",
     "features.html": "https://claude.ai/code/artifact/64072efd-f15b-4e4e-8ed7-76aa739c4bb4",
     "about.html": "https://claude.ai/code/artifact/dd02350a-1449-487c-80ce-aed72fbf2fbe",
+    "privacy.html": "",
 }
 
 STRIP = (
